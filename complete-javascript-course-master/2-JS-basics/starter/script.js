@@ -82,3 +82,40 @@ console.log(typeof ageJohn); //number
 console.log(typeof 'Mark is older than John'); //string
 var x;
 console.log(typeof x); //undefined
+
+
+/*****************************************************
+* Operator precedence
+*/
+
+var now = 2018;
+var yearJohn = 1989;
+var fullAge = 18;
+
+// multiple operators
+var isFullAge = now - yearJohn >= fullAge; // age 29 so it's true
+console.log(isFullAge);
+
+// grouping
+var ageJohn = now - yearJohn
+var ageMark = 35;
+var average = (ageJohn + ageMark) / 2;
+console.log(average);
+
+// multiple assigments
+var x, y;
+x = y = (3 + 5) * 4 - 6; // 8 * 4 - 6 // 32 - 6 // 26
+console.log(x, y);
+
+
+// more operators
+//x = x * 2; is the same as below
+x *= 2;
+console.log(x);
+x += 10;
+console.log(x);
+
+// x = x + 1 and x += 1 and x++ are all the same thing // x++ just adds 1 to total
+
+x++;
+console.log(x);
