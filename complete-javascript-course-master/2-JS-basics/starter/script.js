@@ -81,4 +81,4 @@ console.log(typeof johnOlder); //boolean
 console.log(typeof ageJohn); //number
 console.log(typeof 'Mark is older than John'); //string
 var x;
-console.log(typeof x);  //undefined
+console.log(typeof x); //undefined
