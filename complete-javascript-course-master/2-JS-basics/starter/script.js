@@ -149,3 +149,69 @@ console.log(bmiJohnMark);
 //4. Print a string to the concole containing the variable from step 3.
 console.log('Mark\'s BMI ='+ ' ' + bmiMark + '. ' + 'John\'s BMI =' + ' ' + bmiJohn + '. ' + 'Is Marks BMI is higher?' + ' ' + bmiJohnMark);
 */
+
+/*******************************************************************************
+*If / Else Statements
+*/
+/*
+var firstName = 'John';
+var civilStatus = 'single';
+
+if (civilStatus === 'married') {
+  console.log(firstName + ' is married!');
+} else {
+  console.log(firstName + ' is single!');
+}
+// === means is equal to
+// written in a different way... removed the civilStatus var and replace with isMarried
+// removed the string 'married' and just leave the var isMarried
+var isMarried = true;
+
+if (isMarried) {
+  console.log(firstName + ' is married!');
+} else {
+  console.log(firstName + ' is single!');
+}
+
+
+var massMark = 70; // kg
+var heightMark = 1.755; // meters
+
+var massJohn = 90; // kg
+var heightJohn = 1.505; // meters
+
+var bmiMark = massMark / (heightMark * heightMark);
+//console.log(bmiMark);
+var bmiJohn = massJohn / (heightJohn * heightJohn);
+//console.log(bmiJohn);
+
+var bmiJohnMark = bmiMark > bmiJohn;
+//console.log(bmiJohnMark);
+
+if (bmiMark > bmiJohn) {
+  console.log('Mark\'s BMI is greater than John\'s');
+} else {
+  console.log('John\'s BMI is greater than Mark\'s');
+}
+*/
+
+/*******************************************************************************
+* Boolean Logic
+*/
+
+// && === AND
+// || === or
+// ! === not
+
+var firstName = 'John';
+var age = 25;
+
+if (age < 13) {
+  console.log(firstName + ' is a boy.');
+} else if (age >= 13 && age < 20) {  // between 13 and 20 === age >= 13 AND < 20
+  console.log(firstName + ' is a teenager.');
+} else if (age >= 20 && age < 30) { // between 20 and 30 years === age
+  console.log(firstName + ' is a young man.');
+} else {
+  console.log(firstName + ' is a man.');
+}
