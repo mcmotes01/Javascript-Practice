@@ -1,4 +1,4 @@
-/*************************
+/*******************************************************************************
 * Variables and data types
 */
 /*
@@ -23,7 +23,7 @@ var johnMark = 'john and mark';
 var if = 23;
 */
 
-/*********************************************
+/*******************************************************************************
 * Variable mutation and type coercion
 */
 
@@ -54,9 +54,10 @@ console.log(firstName + ' ' + lastName);
 */
 
 
-/*****************************************
+/*******************************************************************************
 * Basic operators
 */
+/*
 var now, yearJohn, yearMark;
 now = 2018;
 ageJohn = 28;
@@ -82,12 +83,12 @@ console.log(typeof ageJohn); //number
 console.log(typeof 'Mark is older than John'); //string
 var x;
 console.log(typeof x); //undefined
-
-
-/*****************************************************
-* Operator precedence
 */
 
+/*******************************************************************************
+* Operator precedence
+*/
+/*
 var now = 2018;
 var yearJohn = 1989;
 var fullAge = 18;
@@ -119,3 +120,32 @@ console.log(x);
 
 x++;
 console.log(x);
+*/
+
+
+/*******************************************************************************
+* First coding Challenge
+*/
+// BMI = mass / height^2 = mass / (height * height)
+// (mass in kg and height in meter)
+/*
+//1. store Mark's and John's mass and height in Variables
+var massMark = 70; // kg
+var heightMark = 1.755; // meters
+
+var massJohn = 90; // kg
+var heightJohn = 1.505; // meters
+//2. calculate both their BMIs
+
+var bmiMark = massMark / (heightMark * heightMark);
+console.log(bmiMark);
+var bmiJohn = massJohn / (heightJohn * heightJohn);
+console.log(bmiJohn);
+
+//3. Create a boolean variable containing information about whether Mark has a highter
+//BMI than john
+var bmiJohnMark = bmiMark > bmiJohn;
+console.log(bmiJohnMark);
+//4. Print a string to the concole containing the variable from step 3.
+console.log('Mark\'s BMI ='+ ' ' + bmiMark + '. ' + 'John\'s BMI =' + ' ' + bmiJohn + '. ' + 'Is Marks BMI is higher?' + ' ' + bmiJohnMark);
+*/
