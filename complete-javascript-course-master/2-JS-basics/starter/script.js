@@ -220,7 +220,7 @@ if (age < 13) {
 /*******************************************************************************
 * The Ternary Operator (or conditional operator) and switch Statements
 */
-
+/*
 var firstName = 'John';
 var age = 10;
 // Ternary operator
@@ -232,7 +232,7 @@ console.log(drink);
 
 // the statement above replaces an if else statement (makes it cleaner)
 
-/*if (age >= 18) {
+if (age >= 18) {
   var drink ='beer';
 } else {
   var drink ='juice';
@@ -240,7 +240,7 @@ console.log(drink);
 
 // switch Statements
 // normal switch statements are in strings
-var job = 'instructor';
+/*var job = 'instructor';
 switch (job) {
   case 'teacher':
   case 'instructor':
@@ -256,7 +256,6 @@ switch (job) {
   console.log(firstName + ' does something else.');
 }
 
-
 // switch statement using a boolean logic statement
 // there are some cases where you can do switch statments with variable conditions
 switch (true){
@@ -271,4 +270,56 @@ switch (true){
     break;
   default:
   console.log(firstName + ' is a man.');
+}
+
+
+/*******************************************************************************
+* Truthy and Falsy Values and Equality operators
+*/
+
+// falsy values: undefined, null, 0, '', NaN
+// truthy values: NOT falsy Values
+/*
+var height;
+
+height = 23;
+
+if (height || height === 0) {
+  console.log('variable is defined');
+} else {
+  console.log('variable has not been defined');
+}
+
+//Equality operators
+
+if (height == '23'){
+  console.log('The == operator does type coercion!');
+}
+*/
+
+
+/*******************************************************************************
+* Coding Challenge number 2
+*/
+
+var teamJohn;
+teamJohn = (89 + 120 + 103) / 3;
+console.log(teamJohn);
+
+var teamMark;
+teamMark = (119 + 94 + 123) / 3;
+console.log(teamMark);
+
+var teamMary;
+teamMary = (97 + 134 + 105) / 3;
+console.log(teamMary);
+
+if (teamJohn > teamMark && teamJohn > teamMary) {
+  console.log('John\'s team wins the average total score with an average of' + ' ' + teamJohn + '!');
+} else if (teamJohn < teamMark && teamMark > teamMary) {
+  console.log('Mark\'s team wins the average total score with an average of' + ' ' + teamMark + '!');
+} else if (teamJohn < teamMary && teamMark < teamMary){
+  console.log('Mary\'s team wins the average total score with an average of' + ' ' + teamMary + '!');
+} else {
+  console.log('Everyone loses!.. or ties...or whatever')
 }
