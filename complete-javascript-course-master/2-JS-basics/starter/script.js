@@ -301,7 +301,7 @@ if (height == '23'){
 /*******************************************************************************
 * Coding Challenge number 2
 */
-
+/*
 var teamJohn;
 teamJohn = (89 + 120 + 103) / 3;
 console.log(teamJohn);
@@ -323,3 +323,64 @@ if (teamJohn > teamMark && teamJohn > teamMary) {
 } else {
   console.log('Everyone loses!.. or ties...or whatever')
 }
+*/
+
+
+/*******************************************************************************
+* Functions
+*/
+/*
+function calculateAge(birthYear) { // function name
+  return 2018 - birthYear; // it will return 2018 minus the birth years of each person
+}
+/*
+var ageJohn = calculateAge(1990); // birth years of the people
+var ageMike = calculateAge(1948); // birth years of the people
+var ageJane = calculateAge(1969); // birth years of the people
+console.log(ageJohn, ageMike, ageJane); // logs age of person
+
+function yearsUntilRetirement(year, firstName) {
+  var age = calculateAge(year); // uses calculateAge() to get "age"
+  var retirement = 65 - age; // calculates retirement age
+
+  if (retirement > 0) {
+    console.log(firstName + ' retires in ' + retirement + ' years. ');
+  } else {
+    console.log(firstName + ' is already retired.');
+  }
+
+}
+yearsUntilRetirement(1990, 'John'); // calls function yearsUntilRetirement
+yearsUntilRetirement(1948, 'Mike');
+yearsUntilRetirement(1969, 'Jane');
+
+*/
+/*******************************************************************************
+* Function Statements and Expressions
+*/
+/*
+// Function Declaration
+//function whatDoYouDo(job, firstName){}
+
+// Function expression
+var whatDoYouDo = function(job, firstName) {
+    switch(job) {
+      case 'teacher':
+          return firstName + ' teaches kids how to code';
+      case 'driver':
+          return firstName + ' drives a cab';
+      case 'designer':
+          return firstName + ' designs stuff';
+      default:
+          return firstName + ' is lazy';
+    }
+}
+
+console.log(whatDoYouDo('teacher', 'John'));
+console.log(whatDoYouDo('driver', 'Jane'));
+console.log(whatDoYouDo('retired', 'Max'));
+*/
+
+/*******************************************************************************
+* Arrays
+*/
