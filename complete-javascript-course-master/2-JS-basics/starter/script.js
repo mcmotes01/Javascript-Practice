@@ -384,3 +384,62 @@ console.log(whatDoYouDo('retired', 'Max'));
 /*******************************************************************************
 * Arrays
 */
+/*
+// Initialize new array
+//two different ways to write an array
+// arrays are number based and they start with the number 0...1...2...3... and so on..
+var names = ['John', 'Mark', 'Jane']; //  <-- this one is more common
+var years = new Array(1990, 1969, 1948); // <-- this one is less common
+
+console.log(names); // displays names
+console.log(names.length); // displays amount of names in the array above
+
+// Mutate array data
+names[1] = 'Ben'; // changes "Mark" to "Ben" in the array
+names[names.length] = 'Mary'; // adds Mary to the end of the array
+console.log(names);
+
+// Different data types
+
+var john = ['John', 'Smith', 1990, 'teacher', false];
+
+john.push('blue'); // function that adds elements to the end of the array
+john.unshift('Mr.'); // function that adds elements to the beginning of the array
+console.log(john);
+
+john.pop(); // functions that removes element from the end of an array
+john.shift(); // functions that removes element from the beginning of an array
+console.log(john);
+
+console.log (john.indexOf(1990));
+
+var isDesigner = john.indexOf('designer') === -1 ? 'John is not a designer!' : 'John is a designer!'; // ternary operator to show if John is a designer or not
+console.log (isDesigner);
+*/
+
+/*******************************************************************************
+* Test Number 3
+*/
+
+function tipCalculator(bill){
+var percentage;
+  if (bill < 50){
+    percentage = .2;
+  }else if (bill >= 50 && bill < 200){
+    percentage = .15;
+  }else {
+    percentage = .1;
+  }
+  return percentage * bill;
+}
+
+var bill = [124, 48, 268];
+
+var tips = [ tipCalculator(bill[0]),
+              tipCalculator(bill[1]),
+                tipCalculator(bill[2])];
+var finalValues = [bill[0] + tips[0],
+                   bill[1] + tips[1],
+                   bill[2] + tips[2]];
+console.log(finalValues);
+console.log(tips);
